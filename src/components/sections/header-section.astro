@@ -1,23 +1,16 @@
----
-import XLogo from '@/assets/x.svg';
-import GithubLogo from '@/assets/github.svg';
-import LinkedinLogo from '@/assets/linkedin.svg';
----
 
 <header class="mt-20">
-    <h1 class="font-bold text-2xl">Alex Tomas</h1>
+    <h1 class="font-light text-2xl font-montserrat tracking-[8px] uppercase">Alex Tomas</h1>
     <section class="space-y-4 mt-2">
         <p class="text-lg text-white/80 text-balance">Con 20 años y casi 4 de experiencia como Full Stack Developer, empecé como autodidacta, impulsado por una curiosidad insaciable.</p>
         <!-- <p class="text-lg text-white/80">Hoy, compagino mi trabajo full-time en ThePowerMBA con el desarrollo de mi propio SaaS y el aprendizaje de Machine Learning. Además, comparto mis conocimientos y trato de inspirar a nuevos desarrolladores en mis redes sociales y artículos. Mi espíritu emprendedor y ganas de mejorar me llevan a transformar retos en oportunidades.</p> -->
     </section>
     <section class="flex gap-8 mt-6">
-        <a href="https://x.com/alexxtomas_" target="_blank" rel="noopener noreferrer" class="icon">
+        <a href="https://x.com/alexxtomas_" target="_blank" rel="noopener noreferrer" class="icon icon-x">
         </a>
-        <a href="https://www.linkedin.com/in/alex-tomas--/" target="_blank" rel="noopener noreferrer">
-            <LinkedinLogo class="w-7 h-7"/>
+        <a href="https://www.linkedin.com/in/alex-tomas--/" target="_blank" rel="noopener noreferrer" class="icon icon-linkedin">
           </a>
-        <a href="https://github.com/alexxtomas" target="_blank" rel="noopener noreferrer">
-          <GithubLogo class="w-7 h-7" />
+        <a href="https://github.com/alexxtomas" target="_blank" rel="noopener noreferrer" class="icon icon-github">
         </a>
     </section>
    
@@ -28,11 +21,24 @@ import LinkedinLogo from '@/assets/linkedin.svg';
       display: inline-block;
       width: 28px;
       height: 28px;
-      background-image: url('src/assets/x.svg');
       background-size: cover;
       transition: background-image 0.3s ease-in-out;
       transition: transform 0.3s ease;
     }
+
+    .icon-x {
+      background-image: url('src/assets/x.svg');
+    }
+
+    .icon-linkedin {
+      background-image: url('src/assets/linkedin.svg');
+    }
+
+    .icon-github {
+      background-image: url('src/assets/github.svg');
+    }
+ 
+ 
  
     .icon:hover {
       background-image: url('src/assets/external-link.svg');
